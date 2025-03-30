@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Portfolio</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><button class="theme-toggle" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                    </button></li>
+                    <li class="menu-btn"><i class="fas fa-bars"></i></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button class="theme-toggle mobile-theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <span>Toggle Theme</span>
+            </button></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-image">
+                <img src="assets/akhil_2122000007.JPG" alt="Profile Image" style="width: 75%;">
+            </div>
+            <div class="hero-content">
+                <h1>Hi, I'm <span>Akhil Tamgaonkar</span></h1>
+                <h2>Frontend Developer</h2>
+                <a href="#projects" class="btn">View My Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+<section id="about" class="about">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="assets/abttmee.jpeg" alt="About Me">
+            </div>
+            <div class="about-text">
+                <p class="about-description">Hi, I'm Akhil Tamgaonkar, a Software Developer and photography & videography enthusiast. I hold a B.Tech in CSE (AIML) from KITCOEK, Kolhapur. I'm skilled in HTML, CSS, JavaScript, Java , Python with a passion for creating impactful software and expressing creativity through my lens. I'm a quick learner and a team player, always eager to take on new challenges.</p>
+                
+                <div class="about-tabs-container">
+                    <div class="about-tabs">
+                        <button class="tab-btn active" data-tab="education">Education</button>
+                        <button class="tab-btn" data-tab="experience">Experience</button>
+                        <button class="tab-btn" data-tab="Skills">Skills</button>
+
+                    </div>
+                    
+                    <div class="tab-content active" id="education">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <h3>B.Tech in CSE(AIML)</h3>
+                                <p class="date">2021 - 2025</p>
+                                <p>KIT's College of Engineering,Kolhapur</p>
+                            </div>
+                            <div class="timeline-item">
+                                <h3>High School </h3>
+                                <p class="date">2019 - 2021</p>
+                                <p>DYP Shantiniketan,Kolhapur</p>
+                                <p>Science</p>
+                            </div>
+                            <div class="timeline-item">
+                                <h3>X Science</h3>
+                                <p class="date">2019</p>
+                                <p>Rosary English School,Sindhudurg</p>
+                                <p>Science</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="experience">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <h3>FullStack Developer</h3>
+                                <p class="date">2025 - Present</p>
+                                <p>Cognitix Software & Consultancy Pvt Ltd, Pune</p>
+                                <!-- <p>Developed responsive web applications using React.js</p> -->
+                            </div>
+                            <div class="timeline-item">
+                                <h3>Web Development Intern</h3>
+                                <p class="date">2023</p>
+                                <p>Tallent Battle, kolhapur </p>
+                                <!-- <p>Assisted in building company website and admin dashboard</p> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="Skills">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <h3>Languages</h3>
+                                <p>Python, Java, HTML + CSS, JS, ReactJs</p>
+                            </div>
+                            <div class="timeline-item">
+                                <h3>Tools</h3>
+                                <p>Tableu, PowerBI, Adobe Photoshop</p>
+                            </div>
+                            <div class="timeline-item">
+                                <h3>Area of Intrest</h3>
+                                <p>Web Design, Videography & Photography</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://github.com/Akhil054" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/akhil-tamgaonkar-100096192/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Workshops & Certifications Section -->
+<section id="workshops" class="workshops">
+    <div class="container">
+        <h2 class="section-title">Workshops & Certifications</h2>
+        <div class="workshops-grid">
+            <div class="workshop-card">
+                <div class="workshop-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h3> Organised and Hosted <br/> INVICTA 2023-24</h3>
+                <p class="institution">At KITCOEK</p>
+                <p class="date">2024</p>
+            </div>
+
+            <div class="workshop-card">
+                <div class="workshop-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h3> Organised and Hosted <br/> BODHANTRA 2024</h3>
+                <p class="institution">At KITCOEK</p>
+                <p class="date">2024</p>
+            </div>
+
+            <div class="workshop-card">
+                <div class="workshop-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Technex Workshop on AI&ML</h3>
+                <p class="institution">IIT  Varanasi.</p>
+                <p class="date">2023</p>
+            </div>
+
+            <div class="workshop-card">
+                <div class="workshop-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h3>Data Analytics & Visualization </h3>
+                <p class="institution">Forage</p>
+                <p class="date">2024</p>
+                <a href="https://drive.google.com/file/d/1grLVAO6LBLkfMPrxLdp_Mi2uPdX0Bh-S/view?usp=drive_link" class="view-cert">View Certificate</a>
+            </div>
+            
+            <div class="workshop-card">
+                <div class="workshop-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>Talent Battle Web Development </h3>
+                <p class="institution">Talent Battle </p>
+                <p class="date">2024</p>
+                <a href="https://drive.google.com/drive/u/0/folders/1YnFhHsOhrYUnaPg-zKUb3M9ubVCPlf1c" class="view-cert">View Certificate</a>
+            </div>
+            
+        
+            <div class="workshop-card">
+                <div class="workshop-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>TechFest An ML Workshop</h3>
+                <p class="institution">IIT Bombay</p>
+                <p class="date">2023</p>
+                <a href="https://drive.google.com/file/d/1UiBrREIQUOWkk7fd6D8gJJ7S_Qm5PG-t/view?usp=drive_link" class="view-cert">View Certificate</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="assets/portfolio.jpg" alt="Project 1">
+                    <div class="project-info">
+                        <h3>Portfolio</h3>
+                        <!-- <p>A fully responsive online store with product filtering and cart functionality.</p> -->
+                        <div class="project-links">
+                            <a href="#" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="assets/budget.jpg" alt="Project 2">
+                    <div class="project-info">
+                        <h3>Expense Tracker</h3>
+                        <!-- <p>An expense tracker is a simple yet powerful tool that helps individuals monitor and manage their spending habits. </p> -->
+                        <div class="project-links">
+                            <a href="https://github.com/Akhil054/Expenses_tracker" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="assets/ai arm.jpg" alt="Project 3">
+                    <div class="project-info">
+                        <h3>AI- ARM </h3>
+                        <!-- <p>A productivity app for organizing tasks with drag-and-drop functionality.</p> -->
+                        <div class="project-links">
+                            <a href="https://drive.google.com/drive/u/0/folders/1Ikl3eLvgs2qREmU6LnNIidUExD9bNPiY" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="assets/spam snap.png" alt="Project 4">
+                    <div class="project-info">
+                        <h3>Spam- Snap</h3>
+                        <!-- <p>Real-time weather information with 5-day forecast using API integration.</p> -->
+                        <div class="project-links">
+                            <a href="https://github.com/OmNagvekar/SpamSnap" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="assets/Banner .jpg" alt="Project 4">
+                    <div class="project-info">
+                        <h3>Invicta website</h3>
+                        <!-- <p>Real-time weather information with 5-day forecast using API integration.</p> -->
+                        <div class="project-links">
+                            <a href="https://github.com/Akhil054/INVICTA" target="_blank">Code</a>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-envelope"></i>akhil.tamgaokar@gmail.com</p>
+                    <p><i class="fas fa-phone"></i>91+ 9921821468</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Kolhapur, India</p>
+                    <div class="social-links">
+                        <a href="https://github.com/Akhil054" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/akhil-tamgaonkar-100096192/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/AkhilTamgaonkar" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        <span class="error-message"></span>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                    <div id="formSuccess" class="success-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <script src="script.js"></script>
+</body>
+</html>
